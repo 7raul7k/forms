@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <h4 class="header-title">Register for</h4>
+        <h1 class="header-secondtitle">Full Stack Conference</h1>
+    </header>
+
+    <main class="container">
+        <p class="required-field">* - required field</p>
+
+        <section class="container-info">   
+
+
+            <section class="basic-info">
+                <h2 class="basic-info-title">Basic Info</h2>
+
+                <section class="basic-info-name">
+                    <label for="name">Name:*</label>
+                    <input type="text" name="user_name" id="name">     
+                </section>
+
+                <section class="basic-info-email">
+                    <label for="email">Email Address:*</label>
+                    <input type="text" name="user_email" id="email">
+                </section>
+
+                <section class="basic-info-job">
+                    <label for="job">Job Role:</label>
+            <select name="job" id="job">Jobs
+                <optgroup label="Web">
+                    <option value="frontend_developer">Front-end Developer</option>
+                    <option value="php_developer">PHP Developer</option>
+                    <option value="python_developer">Python Developer</option>
+                    <option value="rails_developer">Rails Developer</option>
+                    <option value="web_designer">Web Designer</option>
+                    <option value="wordpress_developer">Wordpress Developer</option>
+                    <option value="backend_developer">Backend Developer</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option value="android_developer">Android Developer</option>
+                    <option value="ios_developer">IOS Developer</option>
+                    <option value="mobile_developer">Mobile Developer</option>
+                </optgroup>
+                <optgroup label="Business">
+                    <option value="business_owner">Business Owner</option>
+                    <option value="freelancer">FreeLancer</option>
+                </optgroup>
+            </select>
+                   
+                </section>
+            </section>
+
+            <section class="t-shirt-info">
+                <h2 class="t-shirt-info-title">T-shirt Info</h2>
+
+                <section class="t-shirt-size">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="s-size">S</option>
+                        <option value="m-size">M</option>
+                        <option value="l-size">L</option>
+                        <option value="xl-size">XL</option>
+                        <option value="xxl-size">XXL</option>
+                    </select>
+                </section>
+
+             
+                <section class="t-shirt-design">
+                    <label for="design">Design:</label>
+                    <select name="design" id="design">
+                        <option value="dtg-printing">DTG Printing</option>
+                        <option value="screen-printing">Screen Printing</option>
+                        <option value="dye-sublimation">Dye Sublimation</option>
+                        <option value="geometric-shapes">Geometric Shapes</option>
+                        <option value="typography-tees">Typhography tees</option>
+                        <option value="abstract-tees">Abstract tees</option>
+                    </select>
+
+                </section>
+
+                <section class="t-shirt-color">
+                    
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="black">Black</option>
+                        <option value="gray">Gray</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="purple">Purple</option>
+                    </select>
+                 </section>
+
+                 <section class="t-shirt-other-role">
+                    <input type="text" placeholder="Other job role?" id="other-role">
+               
+                 </section>
+                
+            </section>
+
+
+            
+
+        </section>
+
+        <section class="container-register">
+
+            <h2 class="register-title">Register for activities: *</h2>
+
+          <section class="cards">
+            <section class="main-card-info">
+                <section class="main-card-container">
+                    <section class="main-card-title-container">
+                        <input type="checkbox" name="main" id="main">
+                        <h3 class="main-title">Main Conference</h3>
+                    </section>
+                    <img src="./img/js.svg" class="main-image">
+                </section>
+                <section class="main-card-description">
+                    <h3 class="main-describe">Tuesday 9am-12pm</h3>
+                    <h3 class="main-price">100$</h3>
+                </section>
+          </section>
+            </section>
+        </section>
+
+
+           <section class="workshop-card-info">
+            
+            <section class="workshop-card">
+                <section class="workshop-card-header">
+                    <section class="workshop-card-title">
+                        <input type="checkbox" name="javascript-libraries" id="javascript-libraries">
+                        <h3>Javascript Libraries Workshop</h3>
+                    </section>
+                    <img src="./img/react.svg" class="workshop-card-image">
+                </section>
+
+                <section class="workshop-card-describe">
+                    <p class="workshop-card-day-describe">Tuesday 9am-12pm</p>
+                    <p class="workshop-card-price-describe">$100</p>
+                </section>
+            </section>
+
+            <section class="workshop-card">
+                <section class="workshop-card-header">
+                    <section class="workshop-card-title">
+                        <input type="checkbox" name="node-js" id="node-js">
+                        <h3>Node.js Workshop</h3>
+                    </section>
+                    <img src="./img/node.svg" class="workshop-card-image">
+                </section>
+
+                <section class="workshop-card-describe">
+                    <p class="workshop-card-day-describe">Tuesday 1pm-4pm</p>
+                    <p class="workshop-card-price-describe">$100</p>
+                </section>
+            </section>
+
+            <section class="workshop-card">
+                <section class="workshop-card-header">
+                    <section class="workshop-card-title">
+                        <input type="checkbox" name="javascript-framework" id="javascript-framework">
+                        <h3>Javascript Frameworks Workshop</h3>
+                    </section>
+                    <img src="./img/js.svg" class="workshop-card-image">
+                </section>
+
+                <section class="workshop-card-describe">
+                    <p class="workshop-card-day-describe">Tuesday 9am-12pm</p>
+                    <p class="workshop-card-price-describe">$100</p>
+                </section>
+            </section>
+
+            <section class="workshop-card">
+                <section class="workshop-card-header">
+                    <section class="workshop-card-title">
+                        <input type="checkbox" name="build-tools" id="build-tools">
+                        <h3>Build tools Workshop</h3>
+                    </section>
+                    <img src="./img/build.svg" class="workshop-card-image">
+                </section>
+
+                <section class="workshop-card-describe">
+                    <p class="workshop-card-day-describe">Tuesday 1pm-4pm</p>
+                    <p class="workshop-card-price-describe">$100</p>
+                </section>
+            </section>
+
+            <section class="workshop-card">
+                <section class="workshop-card-header">
+                    <section class="workshop-card-title">
+                        <input type="checkbox" name="npm-workshop" id="npm-workshop">
+                        <h3>npm Workshop</h3>
+                    </section>
+                    <img src="./img/npm.svg" class="workshop-card-image">
+                </section>
+
+                <section class="workshop-card-describe">
+                    <p class="workshop-card-day-describe">Wednesday 9am-12pm</p>
+                    <p class="workshop-card-price-describe">$100</p>
+                </section>
+            </section>
+
+            <section class="workshop-card">
+                <section class="workshop-card-header">
+                    <section class="workshop-card-title">
+                        <input type="checkbox" name="javascript-libraries" id="">
+                        <h3>Javascript Libraries Workshop</h3>
+                    </section>
+                    <img src="./img/express.svg" class="workshop-card-image">
+                </section>
+
+                <section class="workshop-card-describe">
+                    <p class="workshop-card-day-describe">Wdnesday 1pm-4pm</p>
+                    <p class="workshop-card-price-describe">$100</p>
+                </section>
+            </section>
+
+            <h3 class="total-price">Total :$0</h3>
+            </section>
+
+
+            <section class="payment-info">
+                <h3 class="payment-info-title">Payment info</h3>
+               <section class="payment-info-container">
+                <label for="pay-with">I'm going to pay with:</label>
+                <select name="payment-method" id="payment-method">
+                    <option value="select">Select Payment Method</option>
+                    <option value="paypal">Paypal</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+
+                <label for="card-number">Card Number:*</label>
+                <input type="number" name="card-number" id="card-number">
+
+               </section>
+               <section class="payment-info-container">
+                <label for="pay-with">Expiration Date:</label>
+                <input type="date" name="date-expiration" id="date-expiration">
+
+                <label for="zip-code">Zip Code:*</label>
+                <input type="number" name="zip-code" id="zip-code">
+
+               </section>
+               <section class="payment-info-container">
+                <label for="pay-with">Expiration Year:</label>
+                <select name="year" id="year">
+                    <option value="select-year">Select Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                </select>
+
+                <label for="cvv">CVV:*</label>
+                <input type="number" name="cvv" id="cvv">
+
+               </section>
+
+               <section class="payment-method-info">
+                
+                <section class="payment-method-container">
+                    <h3 class="payment-method-title">Paypal</h3>
+                    <p class="payment-method-describe">If you selected the Paypal option we'll take you to Paypal's site to set up your billing information,when you click "Register" below</p>
+                </section>
+               </section>
+
+
+               <section class="payment-method-container">
+                <h3 class="payment-method-title">Bitcoin</h3>
+                <p class="payment-method-describe">IIf you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information.Due to the nature of exchanging Bitcoin,all Bitcoin transactions will be final</p>
+            </section>
+            <button class="register">Register</button>
+           </section>
+
+         
+          
+   
+    </main>
+
+
+
+</body>
+
+</html>
